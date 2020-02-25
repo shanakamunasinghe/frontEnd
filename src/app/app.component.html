@@ -1,0 +1,23 @@
+
+<!-- Navbar -->
+<app-header [(title)]="title" [(client)]="client"></app-header>
+
+
+<!-- Login Page -->
+<div class="container" [hidden]="client.id!=0">
+  <!-- Spacing between navbar and main content -->
+  <div class="mt-4"></div>
+  <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <app-login (loginEventEmitter)='loginUser($event)'></app-login>
+    </div>
+  </div>
+</div>
+
+<!-- User Dashboard -->
+<!-- <div class="container-fluid" [hidden]="client.id==0">
+  <app-dashboard [client]="client"></app-dashboard>
+</div> -->
+
+<router-outlet></router-outlet>
