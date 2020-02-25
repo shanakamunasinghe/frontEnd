@@ -1,0 +1,17 @@
+{
+  "name": "ws-server",
+  "version": "1.0.0",
+  "description": "Kendo UI for Angular - WebSocket API Sample Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Progress",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "ws": "^6.2.1"
+  }
+}
